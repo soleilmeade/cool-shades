@@ -1,0 +1,147 @@
+html,
+body {
+  background-color: lightgrey;
+  margin: 0;
+  padding: 0;
+  /*********************************************************
+  *
+  * Makes the hero.jpg image fill the height of the browser
+  * along with properites in .background-image
+  *
+  *********************************************************/
+  height: 100%;
+}
+
+
+/***************************
+********** BUTTONS *********
+****************************/
+.btn-primary {
+  background-color: #d51419;
+  border-color: #dc3545;
+}
+
+.btn-primary:hover {
+  background-color: #dc3545;
+  border-color: #d51419;
+}
+
+
+
+/***************************
+********** HEADER **********
+****************************/
+.background-image {
+  padding-top: 25px;
+  /*********************************************************
+  *
+  * Make the hero.jpg image fill the height of the browser
+  *
+  *********************************************************/
+  background-image: url("images/hero.jpg");
+  background-size: cover;
+  height: 100%;
+}
+
+header .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.navbar-brand > img {
+  display: block;
+  /*************************************************
+  *
+  * Shorthand: TOP RIGHT BOTTOM LEFT
+  * https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties
+  *
+  ***************************************************/
+  margin: 0 0 5px 0;
+}
+
+.navbar-brand--sublogo {
+  color: black;
+  font-size: 13px;
+  /*********************************
+  *
+  * CSS Layout: "Flexbox"
+  * https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  *
+  * https://css-tricks.com/dont-overthink-flexbox-grids/
+  *
+  *********************************/
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* end */
+}
+
+nav a {
+  color: white;
+  padding: 10px 5px;
+  margin-right: 10px;
+}
+
+/***************************************************************
+*
+* Pseudo Elements
+* https://www.w3schools.com/CSS/css_pseudo_elements.asp
+*
+* :last-child
+* https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child
+*
+****************************************************************/
+
+nav a:last-child {
+  margin: 0;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+
+
+/***************************
+********** MAIN **********
+****************************/
+main {
+  position: relative;
+
+  /******************************************************
+  *
+  * calc
+  * https://developer.mozilla.org/en-US/docs/Web/CSS/calc
+  *
+  *******************************************************/
+  top: calc(50% - 134px);
+}
+
+main h2 {
+  color: white;
+  font-size: 50px;
+
+  /********************************************************
+  *
+  * Text Shadow
+  * https://www.w3schools.com/cssref/css3_pr_text-shadow.asp
+  *
+  * RGBA
+  * https://www.w3schools.com/cssref/func_rgba.asp
+  *
+  *********************************************************/
+  text-shadow: 1px 1px 15px rgba(0, 0, 0, .2);
+}
+
+main p {
+  font-size: 20px;
+  color: white;
+  text-shadow: -1px 1px 15px rgba(0,0,0,.2);
+}
+
+section{
+background-color: white;
+}
