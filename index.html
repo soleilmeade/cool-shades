@@ -7,85 +7,179 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
 
     <title>Cool Shades</title>
   </head>
   <body>
- <!-- HERO (above the fold) -->
-    <div class= "background-image">
+    <!-- HERO (above the fold) -->
+    <div class="background-image">
       <header>
         <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="images/logo--rock-n-stroll.png" alt="Rock-N-Stroll-Logo" width="280" />
-            <img src="images/logo--peppers-black-sm.png" alt="Peppers-Logo-Sm" width="100" align="right" />
+          <a href="#" class="navbar-brand">
+            <img src="images/logo--rock-n-stroll.png" width="280" />
+            <div class="navbar-brand--sublogo">
+              by <img src="images/logo--peppers-black-sm.png" width="80" />
+            </div>
           </a>
-
-        <nav>
-          <a class="navbar-brand" href="#"> Shop </a>
-          <a class="navbar-brand" href="#"> Features </a>
-          <a class="navbar-brand" href="#"> Support </a>
-        </nav>
+          <nav>
+            <a href="#">
+              Shop
+            </a>
+            <a href="#">
+              Features
+            </a>
+            <a href="#">
+              Support
+            </a>
+          </nav>
+        </div>
       </header>
 
       <main>
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <h2>Audio Sunglasses</h2>
-                  <p> Hit the slopes or Ride your <br> bike without wearing earbuds.</p>
-                  <a class="btn btn-primary" href="#" role="Shop Now">Shop Now</a>
-                </div>
-              </div>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2>
+                Audio Sunglasses
+              </h2>
+              <p>
+                Hit the slopes or Ride your
+                <br />
+                bike without wearing earbuds.
+              </p>
+              <a class="btn btn-primary btn-lg" href="#">
+                Shop Now
+              </a>
             </div>
+          </div>
+        </div>
       </main>
 
     </div>
-  <!-- /HERO (above the fold) -->
+    <!-- /HERO (above the fold) -->
 
-          <section>
-            <div class="container">
-              <div class="row featurette">
-                <div class="col-md-7">
-                  <h1 class="featurette-heading">Hands Free</h1>
-                  <p class="lead">Play music, answer calls & <br> turn by turn navigation streamed through your shades</p>
-                  <a class="btn btn-primary" href="#" role="Explore Features">Explore Features</a>
+    <!-- hands free -->
 
-                </div>
-                <div class="col-md-5">
-                  <img src="images/cta-sunglasses.jpg" alt="CTA sunglasses" width="500"/>
-                </div>
-              </div>
-            </div>
-          </section>
-
-    <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="images/instagram-1.jpg" class="card-img-top" alt="Client Photo 1">
-              <img src="images/instagram-2.jpg" class="card-img-top" alt="Client Photo 1">
+    <div class="container my-5">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">
+            Hands Free
+          </h2>
+          <p class="lead">
+            Play music, answer calls & turn by turn navigation streamed through your shades.
+          </p>
+          <button type="button" class="btn btn-danger btn-lg">
+            Explore Features
+          </button>
+        </div>
+        <div class="col-md-5">
+          <img src="images/product-red.jpg" class="featurette-image img-fluid mx-auto" width="500" height="500" />
         </div>
       </div>
     </div>
+
+    <!-- Instagram
+
+    Layout : Grid https://getbootstrap.com/docs/4.3/layout/grid/#equal-width
+
+    Containers : Fluid : https://getbootstrap.com/docs/4.3/layout/overview/#containers
+
+    -->
+    <div class="container-fluid instagram-container">
+      <div class="row">
+        <div class="col pl-0">
+          <a href="https://www.instagram.com/peppers/" target="_blank" title="Peppers on Instagram">
+            <div class="position-relative">
+              <img src="images/instagram-1.jpg" class="w-100" />
+              <img class="ig-logo" src="images/instagram-logo.png" />
+            </div>
+          </a>
+        </div>
+        <div class="col pr-0">
+          <a href="https://www.instagram.com/peppers/" target="_blank" title="Peppers on Instagram">
+            <div class="position-relative">
+              <img src="images/instagram-2.jpg" class="w-100" />
+              <img class="ig-logo" src="images/instagram-logo.png" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+      <!--products -->
+
+    <section id="find-your-style" class="my-2 py-3 bg-light">
+      <div class="container">
+        <h2>Find Your Style</h2>
+      </div>
     </section>
 
-
-
-
-
-
-
-
+    <section id="style-products">
+      <div class="row">
+        <div class="col-md-3 peppers-product">
+          <img class="img-fluid" src="./images/product-red.jpg" alt="Peppers Rock-N-Stroll Red">
+          <p class="product-title">Rock-N-Stroll</p>
+          <h3>Red</h3>
+          <p class="product-price">$199.00</p>
+          <div class="product-cta-container">
+            <a href="#" class="btn btn-danger btn-lg">Add to Cart</a>
+          </div>
+        </div>
+        <div class="col-md-3 peppers-product">
+          <img class="img-fluid" src="./images/product-green.jpg" alt="Peppers Rock-N-Stroll Green">
+          <p class="product-title">Rock-N-Stroll</p>
+          <h3>Green</h3>
+          <p class="product-price">$199.00</p>
+          <div class="product-cta-container">
+            <a href="#" class="btn btn-danger btn-lg">Add to Cart</a>
+          </div>
+        </div>
+        <div class="col-md-3 peppers-product">
+          <img class="img-fluid" src="./images/product-blue.jpg" alt="Peppers Rock-N-Stroll Blue">
+          <p class="product-title">Rock-N-Stroll</p>
+          <h3>Blue</h3>
+          <p class="product-price">$199.00</p>
+          <div class="product-cta-container">
+            <a href="#" class="btn btn-danger btn-lg">Add to Cart</a>
+          </div>
+        </div>
+        <div class="col-md-3 peppers-product">
+          <img class="img-fluid" src="./images/product-black.jpg" alt="Peppers Rock-N-Stroll Black">
+          <p class="product-title">Rock-N-Stroll</p>
+          <h3>Black</h3>
+          <p class="product-price">$199.00</p>
+          <div class="product-cta-container">
+            <a href="#" class="btn btn-danger btn-lg">Add to Cart</a>
+          </div>
+        </div>
       </div>
+    </section>
 
-            <!-- Optional JavaScript -->
-            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-          </body>
+    <div class="container my-5">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">
+            Bone Conduction Audio
+          </h2>
+          <p class="lead">
+            Sounds are converted to vibrations and
+passed directly to the auditory nerve bones
+          </p>
+          <button type="button" class="btn btn-danger btn-lg">
+            Learn more
+          </button>
+        </div>
+        <div class="col-md-5">
+          <img src="images/bone-conduction.jpg" class="featurette-image img-fluid mx-auto" width="500" height="500" />
+        </div>
+      </div>
+    </div>
 
-
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
