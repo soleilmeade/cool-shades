@@ -212,3 +212,19 @@ p.product-price {
 	padding-bottom: 5em;
 	text-align: center;
 }
+
+/*responsive*/
+#mobile-products {
+  display: block;
+}
+#style-products {
+  display: none;
+}
+@media (min-width: 768px) {
+  #mobile-products {
+    display: none;
+  }
+  #style-products {
+  display: block
+  }  
+}
