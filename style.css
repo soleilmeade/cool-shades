@@ -171,7 +171,7 @@ main p {
 /********************/
 /* PRODUCTS CONTENT CSS */
 /********************/
-#style-products > .row {
+#desktop-products  > .row {
 	margin: 0 10px;
 }
 
@@ -217,14 +217,14 @@ p.product-price {
 #mobile-products {
   display: block;
 }
-#style-products {
+#desktop-products  {
   display: none;
 }
 @media (min-width: 768px) {
   #mobile-products {
     display: none;
   }
-  #style-products {
+  #desktop-products  {
   display: block
-  }  
+  }
 }
