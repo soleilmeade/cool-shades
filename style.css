@@ -217,6 +217,7 @@ p.product-price {
 #mobile-products {
   display: block;
 }
+
 #desktop-products  {
   display: none;
 }
@@ -224,7 +225,8 @@ p.product-price {
   #mobile-products {
     display: none;
   }
-  #desktop-products  {
+
+  #desktop-products {
   display: block
   }
 }
