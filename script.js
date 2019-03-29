@@ -27,10 +27,16 @@ var shades=[redShades,greenShades,blueShades,blackShades];
 
 function mobileProducts(product) {
   return `
-    <div class="col-md-3 peppers-product" "text center">
+    <div class="col-md-3 peppers-product text-center">
       <img class="img-fluid" src="${product.image}" alt="Peppers Rock-N-Stroll Red">
       <p class="product-title">${product.subtitle}</p>
       <h3>${product.title}</h3>
+        <div class="circles">
+          <div class="circle red" data-index="0"></div>
+          <div class="circle green" data-index="1"></div>
+          <div class="circle blue" data-index="2"></div>
+          <div class="circle black" data-index="3"></div>
+        </div>
       <p class="product-price">$${product.price}</p>
       <div class="product-cta-container">
         <a href="#" class="btn btn-danger btn-lg">Add to Cart</a>
@@ -40,5 +46,13 @@ function mobileProducts(product) {
 }
 
 $(document).ready(function(){
-  $('#mobile-products').html(mobileProducts(greenShades));
+  $('#mobile-products').html(mobileProducts(redShades));
+
+  $('.circle').click(function(){
+    var index = $(this).data('index');
+
+    console.log(index);
+    console.log(shades[index]);
+  });
+
 });

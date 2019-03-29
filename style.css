@@ -230,3 +230,26 @@ p.product-price {
   display: block
   }
 }
+
+.circle {
+  border-radius: 100%;
+  background:red;
+  display:inline-block;
+  height:20px;
+  width:20px;
+}
+
+.red{
+  background:red;
+}
+
+.blue{
+  background:blue;
+}
+.green{
+  background:green;
+}
+
+.black{
+  background:black;
+}
