@@ -209,12 +209,12 @@ p.product-price {
 
 .product-cta-container {
 	background-color: #fAfAfA;
-	padding-bottom: 5em;
+	padding-bottom: 3em;
 	text-align: center;
 }
 
 /*responsive*/
-#mobile-products {
+#mobile-products-container {
   display: block;
 }
 
@@ -222,7 +222,7 @@ p.product-price {
   display: none;
 }
 @media (min-width: 768px) {
-  #mobile-products {
+  #mobile-products-container {
     display: none;
   }
 
