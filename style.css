@@ -16,13 +16,13 @@ body {
 ********** BUTTONS *********
 ****************************/
 .btn-primary {
-  background-color: #d51419;
-  border-color: #dc3545;
+  background-color: #727680;
+  border-color: #505259;
 }
 
 .btn-primary:hover {
-  background-color: #dc3545;
-  border-color: #d51419;
+  background-color: #727680;
+  border-color: #505259;
 }
 
 
@@ -79,8 +79,10 @@ header .container {
 
 nav a {
   color: white;
-  padding: 10px 5px;
+  padding: 10px 10px;
   margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 
 /***************************************************************
@@ -120,8 +122,10 @@ main {
 }
 
 main h2 {
-  color: white;
+  color: #000C61;
   font-size: 50px;
+  font-family: Muro;
+
 
   /********************************************************
   *
@@ -135,12 +139,20 @@ main h2 {
   text-shadow: 1px 1px 15px rgba(0, 0, 0, .2);
 }
 
-main p {
-  font-size: 20px;
+main p1 {
+  font-size: 30px;
+  font-style: italic;
   color: white;
   text-shadow: -1px 1px 15px rgba(0,0,0,.2);
 }
 
+main p2 {
+  font-size: 60px;
+  font-family: Nexa Light;
+  font-style: italic;
+  color: white;
+  text-shadow: -1px 1px 15px rgba(0,0,0,.2);
+}
 
 /************************
 ****** Instagram ********
@@ -231,6 +243,10 @@ p.product-price {
   }
 }
 
+.circles {
+  padding: 0 0 2rem;
+}
+
 .circle {
   border-radius: 100%;
   background:red;
@@ -252,4 +268,14 @@ p.product-price {
 
 .black{
   background:black;
+}
+
+.features-container{
+  line-height: 1.8;
+  margin-left: 80px;
+  font-size: 1.2em;
+}
+
+.features-background-image{
+  margin: auto;
 }
