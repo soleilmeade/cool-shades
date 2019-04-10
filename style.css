@@ -104,6 +104,11 @@ nav a:hover {
   text-decoration: underline;
 }
 
+.flexbox-nav{
+  display: flex;
+  align-items: right;
+  justify-content: right;
+}
 
 
 /***************************
@@ -241,7 +246,14 @@ p.product-price {
   background-position-x: center;
   background-position-y: bottom;
   background-size: cover;
-  min-height: 42em;
+  min-height: 40em;
+}
+
+.flexbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 /*responsive*/
@@ -287,10 +299,4 @@ p.product-price {
 
 .black{
   background:black;
-}
-
-.features-container{
-  line-height: 1.8;
-  margin-left: 80px;
-  font-size: 1.2em;
 }
