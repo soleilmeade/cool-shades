@@ -42,7 +42,7 @@ body {
   height: 100%;
 }
 
-header .container {
+header.container {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -104,7 +104,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-.flexbox-nav{
+.flexbox{
   display: flex;
   align-items: right;
   justify-content: right;
@@ -246,7 +246,7 @@ p.product-price {
   background-position-x: center;
   background-position-y: bottom;
   background-size: cover;
-  min-height: 40em;
+  min-height: 60em;
 }
 
 .flexbox{
