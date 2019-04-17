@@ -152,8 +152,8 @@ main p1 {
 }
 
 main p2 {
-  font-size: 60px;
-  font-family: Nexa Light;
+  font-size: 100px;
+  font-family: Muro;
   font-style: italic;
   color: white;
   text-shadow: -1px 1px 15px rgba(0,0,0,.2);
@@ -162,6 +162,7 @@ main p2 {
   background-color:#white;
   margin-top:30px;
 }
+
 /************************
 ****** Instagram ********
 ************************/
@@ -240,20 +241,10 @@ p.product-price {
 	text-align: center;
 }
 
-.background-sunglasses{
-  position:relative;
-  background: url("images/features.jpg") center center no-repeat;
-  background-position-x: center;
-  background-position-y: bottom;
-  background-size: cover;
-  min-height: 60em;
-}
-
-.flexbox{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.background-glasses{
   text-align: center;
+  margin-left: 80px;
+  padding-top: 0px;
 }
 
 /*responsive*/
@@ -299,4 +290,31 @@ p.product-price {
 
 .black{
   background:black;
+}
+
+.footer{
+  background-color:black;
+  color: white;
+}
+
+.bottom{
+  color: white;
+  display: inline-block;
+  margin-left: 28%;
+  font-size: 20px;
+  font-style: normal;
+}
+.foot-logo{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+.footer.contact{
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  font-size: 30px;
 }
